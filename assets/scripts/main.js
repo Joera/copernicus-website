@@ -17,7 +17,7 @@ window.addEventListener('load', function () {
 
 async function getSupply(contract) {
 
-    contract.totalSupply.call(function (err, data) {
+    await contract.totalSupply.call(function (err, data) {
         if (err) {
             console.log(err)
         }
