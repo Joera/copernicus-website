@@ -56,9 +56,14 @@ async function getSupply(contract) {
 
                 console.log(contract);
 
-                let owner = contract.ownerOf(i).call();
+                let owner = contract.ownerOf(i).call().then( (error,data) => {
 
-                console.log(owner);
+                    console.log(error);
+                    console.log(data);
+
+                })
+
+
 
                 // contract.exists(i)) {
                 // //
