@@ -116,10 +116,10 @@ async function getContract(myWeb3) {
 function showcase(i) {
 
     if(i === 2) {
-        document.querySelector('.showcase_wrapper').classList.add('grid');
+        document.querySelector('.showcase_wrapper').classList.add('grid_view');
 
     } else {
-        document.querySelector('.showcase_wrapper').classList.remove('grid');
+        document.querySelector('.showcase_wrapper').classList.remove('grid_view');
     }
 
 
