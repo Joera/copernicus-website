@@ -235,6 +235,15 @@ div.system {
     display: flex;
     justify-content: center;
     align-items: center;
+    transform: rotateY(90deg);
+    transform-style: preserve-3d;
+    animation-name: invert;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transition-property: top, left;
+    transition-duration: .8s;
+    transition-timing-function: ease-in-out;
+    animation-duration: 8s;
     /*z-index: 100;*/
     /*transform: rotateX(-90deg) rotateY(90deg);*/
 
@@ -503,4 +512,12 @@ div.grid  a:nth-of-type(21) {
     100% {
         transform: rotateZ(-360deg); }
 
+}
+
+@keyframes invert {
+    0% {
+        transform: rotateX(-90deg) rotateY(360deg) rotateZ(0deg); }
+
+    100% {
+        transform: rotateX(-90deg) rotateY(0deg) rotateZ(0deg); }
 }
