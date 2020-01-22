@@ -177,6 +177,7 @@ section.showcase > div.showcase_wrapper > div {
 
 div.system {
 
+    position: relative;
     width: 100vh;
     height: 100vh;
     display: flex;
@@ -198,14 +199,22 @@ div.system {
 
 .satelite {
     position: absolute;
-    top: 10vh;
-    margin-left : calc(50% - 10vh);
+    top: 30vh;
+    left: calc(50% - 20vh);
     height: 40vh;
     width: 40vh;
     border: 1px solid white;
 }
 
-#satelite_1 {
+#satelite_1 div {
+
+    position: absolute;
+    top: 0;
+    left: calc(50% - 1rem);
+    width: 2rem;
+    height: 2rem;
+    border-radius: 100%;
+    background: linear-gradient(90deg, rgba(219,232,7,1) 0%, rgba(255,0,0,1) 93%);
 
 }
 
