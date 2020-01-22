@@ -226,11 +226,11 @@ div.system {
 }
 
 .orbit:nth-of-type(2n) {
-    animation-delay: 2s;
+    animation-delay: 1.5s;
 }
 
 .orbit:nth-of-type(2n) div {
-    animation-delay: 2s;
+    animation-delay: 1.5s;
 }
 
 .orbit div {
