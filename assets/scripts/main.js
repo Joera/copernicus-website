@@ -91,9 +91,15 @@ async function getContract(myWeb3) {
 
                 ob.tokenURI = await getTokenURI(contract,i);
 
-                el = document.querySelector(".grid div:nth-of-type(" + i + ")");
+                el = document.querySelector(".grid a:nth-of-type(" + i + ")");
 
-                el.classList.add(ob.owner);
+                if(ob.owner && ob.owner !== undefined) {
+                    el.classList.add('has_owner');
+                }
+
+                el.href = 'https://opensea.io/assets/' + address + '/' + i;
+
+
 
                 tokenList.push(ob);
             }
