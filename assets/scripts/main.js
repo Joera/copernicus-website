@@ -68,9 +68,11 @@ async function getSupply(contract) {
 
             }
 
+            setTimeout( function() {
 
-            console.log(tokenList);
-
+                console.log(tokenList);
+            },5000)
+            
 
         } else {
             return false;
