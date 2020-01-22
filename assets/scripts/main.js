@@ -17,7 +17,7 @@ window.addEventListener('load', function () {
 
 async function getSupply(contract) {
 
-    await contract.totalSupply.call(function (err, data) {
+    contract.totalSupply.call(function (err, data) {
         if (err) {
             console.log(err)
         }
@@ -40,26 +40,34 @@ async function getContract(myWeb3) {
 
     let contract = myWeb3.eth.contract(abi).at(address);
 
-    console.log(contract);
 
-    let supply = await getSupply(contract);
-
-    let tokenList = {};
-
-    for (let i = 1; i < parseInt(supply); i++) {
-
-        console.log(i);
-
-        if (contract.exists(i)) {
-
-            tokenList[i] = {
-
-                'owner' : contract.ownerOf(i),
-                'tokenUri' : contract.tokenURI(i)
-            }
+    contract.totalSupply.call(function (err, data) {
+        if (err) {
+            console.log(err)
         }
-    }
+        if (data) {
 
-    console.log(tokenList);
+            let supply = data.toNumber();
 
+            let tokenList = {};
+
+            for (let i = 1; i < parseInt(supply); i++) {
+
+                console.log(i);
+
+                if (contract.exists(i)) {
+
+                    tokenList[i] = {
+
+                        'owner' : contract.ownerOf(i),
+                        'tokenUri' : contract.tokenURI(i)
+                    }
+                }
+            }
+
+
+        } else {
+            return false;
+        }
+    });
 }
