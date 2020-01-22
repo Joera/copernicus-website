@@ -59,14 +59,14 @@ async function getContract(myWeb3) {
 
                 console.log(i);
 
-                if (contract.exists(i)) {
-
-                    tokenList[i] = {
-
-                        'owner' : contract.ownerOf(i),
-                        'tokenUri' : contract.tokenURI(i)
-                    }
-                }
+                // if (contract.exists(i)) {
+                //
+                //     tokenList[i] = {
+                //
+                //         'owner' : contract.ownerOf(i),
+                //         'tokenUri' : contract.tokenURI(i)
+                //     }
+                // }
             }
 
 
