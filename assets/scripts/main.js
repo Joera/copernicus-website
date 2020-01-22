@@ -53,7 +53,9 @@ async function getContract(myWeb3) {
 
             console.log(supply);
 
-            for (let i = 1; i < parseInt(supply); i++) {
+            let i;
+
+            for (i = 1; i < parseInt(supply); i++) {
 
                 console.log(i);
 
