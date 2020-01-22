@@ -42,6 +42,7 @@ async function getSupply(contract) {
 
 
     contract.totalSupply.call(function (err, data) {
+
         if (err) {
             console.log(err)
         }
@@ -53,10 +54,12 @@ async function getSupply(contract) {
 
             for (i = 1; i < parseInt(supply) + 1; i++) {
 
-                contract.ownerOf(i).call(function (err, data) {
+                console.log(contract);
 
-                    console.log(data);
-                });
+                // contract.ownerOf(i).call(function (err, data) {
+                //
+                //     console.log(data);
+                // });
 
                 // contract.exists(i)) {
                 // //
