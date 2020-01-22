@@ -23,24 +23,24 @@ function getContract() {
    console.log(myWeb3)
 
 
-    // contract = myWeb3.contract(abi).at(address);
-    //
-    // let supply = parseInt(contract.totalSupply());
-    //
-    // let tokenList = {};
-    //
-    // for (let i = 1; i < supply; i++) {
-    //
-    //     if (contract.exists(i)) {
-    //
-    //         tokenList[i] = {
-    //
-    //             'owner' : contract.ownerOf(i),
-    //             'tokenUri' : contract.tokenURI(i)
-    //         }
-    //     }
-    // }
-    //
-    // console.log(tokenList);
+    contract = myWeb3.eth.contract(abi).at(address);
+
+    let supply = parseInt(contract.totalSupply());
+
+    let tokenList = {};
+
+    for (let i = 1; i < supply; i++) {
+
+        if (contract.exists(i)) {
+
+            tokenList[i] = {
+
+                'owner' : contract.ownerOf(i),
+                'tokenUri' : contract.tokenURI(i)
+            }
+        }
+    }
+
+    console.log(tokenList);
 
 }
