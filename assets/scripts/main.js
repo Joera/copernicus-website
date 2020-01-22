@@ -54,30 +54,27 @@ async function getSupply(contract) {
 
             for (i = 1; i < parseInt(supply) + 1; i++) {
 
-                console.log(contract);
+                contract.ownerOf.call(i, function (error,data)  {
 
-                contract.ownerOf.call(1, function (error,data)  {
-
-                    console.log(error);
-                    console.log(data);
-
+                    if(error) { console.log(error); }
+                    tokenList[i].owner = data;
                 })
 
+                contract.tokenURI.call(i, function (error,data)  {
 
+                    if(error) { console.log(error); }
+                    tokenList[i].tokenURI = data;
+                })
 
-                // contract.exists(i)) {
-                // //
-                // //     tokenList[i] = {
-                // //
-                // //         'owner' : contract.ownerOf(i),
-                // //         'tokenUri' : contract.tokenURI(i)
-                // //     }
-                // }
             }
+
+            console.log(tokenList);
 
 
         } else {
             return false;
         }
+
+
     });
 }
