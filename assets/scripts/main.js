@@ -15,6 +15,19 @@ window.addEventListener('load', function () {
     }
 })
 
+async function getSupply(contract) {
+
+    contract.totalSupply.call(function (err, data) {
+        if (err) {
+            console.log(err)
+        }
+        if (data) {
+            return data;
+        } else {
+            return false;
+        }
+}
+
 async function getContract(myWeb3) {
 
     let address = '0xc48cE47D564d7B09b40f0B1d15908FA8699B3896';
@@ -26,7 +39,7 @@ async function getContract(myWeb3) {
 
     console.log(contract);
 
-    let supply = await contract.totalSupply();
+    let supply = await getSupply(contract);
 
     console.log(supply);
 
