@@ -33,8 +33,10 @@ async function getSupply(contract) {
 
 async function getOwnerOf(contract,i) {
 
+    console.log(i);
+
     contract.ownerOf.call(i, function (error,data)  {
-        
+
         console.log(data);
 
         if(error) { console.log(error); }
