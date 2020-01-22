@@ -186,7 +186,7 @@ div.system {
     align-items: center;
     margin: 0 auto;
     transform-style: preserve-3d;
-    transform: rotateX(-75deg);
+    transform: rotateX(75deg);
 
 }
 
@@ -194,12 +194,11 @@ div.system {
 
     position: relative;
 
-    height: 128vh;
-    width: 128vh;
+    height: 32vh;
+    width: 32vh;
     border-radius: 50%;
     background: linear-gradient(90deg, rgba(219,232,0,1) 0%, rgba(255,162,7,1) 100%);
-    transform: rotateX(0deg);
-    transform: rotateY(-70.5deg);
+    transform: rotateX(-90deg);
     z-index: 99;
     transform-style: preserve-3d;
 
