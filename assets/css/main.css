@@ -180,7 +180,7 @@ div.grid  a {
 
 div.grid  a.has_owner {
 
-    background: linear-gradient(180deg, rgba(0,116,255,1) 0%, rgba(255,0,0,1) 93%);
+    background: linear-gradient(180deg, rgba(0,116,255,1) 0%, rgba(0,40,90,1) 93%);
 }
 
 div.grid  a:hover {
