@@ -133,7 +133,7 @@ ul.menu > li {
 }
 
 
-div.showcase {
+section.showcase {
 
     position: relative;
     width: 100vw;
@@ -145,7 +145,7 @@ div.showcase {
     flex-direction: row;
 }
 
-div.showcase div {
+section.showcase div {
 
      position: absolute;
      top: 0;
@@ -155,7 +155,7 @@ div.showcase div {
 
  }
 
-div.showcase div:nth-of-type(2) {
+section.showcase div:nth-of-type(2) {
 
     left: 100vw;
 }
