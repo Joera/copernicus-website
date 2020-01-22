@@ -517,10 +517,12 @@ div.grid  a:nth-of-type(21) {
 
 @keyframes orbit {
     0% {
-        transform: rotateZ(0deg) rotateX(33deg); }
+        transform: rotateX(33deg) rotateZ(0deg);
+    }
 
     100% {
-        transform: rotateZ(-360deg) rotateX(33deg); }
+        transform: rotateX(33deg) rotateZ(-360deg);
+    }
 
 }
 
