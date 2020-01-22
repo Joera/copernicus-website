@@ -210,21 +210,32 @@ div.system {
     animation-name: orbit;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
-    animation-duration: 353.36998s;\
+    animation-duration: 11s;
     transition-duration: .8s;
     transition-timing-function: ease-in-out;
 }
 
-#satelite_1 div {
+.satelite div {
 
     position: absolute;
-    top: -1rem;
-    left: calc(50% - 1rem);
     width: 2rem;
     height: 2rem;
-    border-radius: 100%;
+    border-radius: 50%;
     background: linear-gradient(90deg, rgba(219,232,7,1) 0%, rgba(255,0,0,1) 93%);
 
+}
+
+#satelite_1 div {
+
+    top: -1rem;
+    left: calc(50% - 1rem);
+    right: -1rem;
+}
+
+#satelite_2 div {
+
+    top: calc(50% - 1rem);
+    right: -1rem;
 }
 
 
