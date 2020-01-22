@@ -35,13 +35,15 @@ async function getOwnerOf(contract,i) {
 
     console.log(i);
 
-    contract.ownerOf.call(i, function (error,data)  {
+    let owner = await contract.ownerOf.call(i, function (error,data)  {
 
-        console.log(data);
+
 
         if(error) { console.log(error); }
         return data;
     })
+
+    console.log(owner);
 }
 
 async function getContract(myWeb3) {
