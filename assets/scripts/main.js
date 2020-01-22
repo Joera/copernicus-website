@@ -48,6 +48,8 @@ async function getContract(myWeb3) {
 
     for (let i = 1; i < supply; i++) {
 
+        console.log(i);
+
         if (contract.exists(i)) {
 
             tokenList[i] = {
