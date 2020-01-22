@@ -26,6 +26,7 @@ async function getSupply(contract) {
         } else {
             return false;
         }
+    });
 }
 
 async function getContract(myWeb3) {
