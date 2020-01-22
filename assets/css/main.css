@@ -260,26 +260,26 @@ div.system {
 
 }
 
-#satelite_1  {
+.satelite_1  {
 
     top: -1rem;
     left: calc(50% - 1rem);
     right: -1rem;
 }
 
-#satelite_2  {
+.satelite_2  {
 
     top: calc(50% - 1rem);
     right: -1rem;
 }
 
-#satelite_3  {
+.satelite_3  {
 
     left: calc(50% - 1rem);
     bottom: -1rem;
 }
 
-#satelite_4  {
+.satelite_4  {
 
     top: calc(50% - 1rem);
     left: -1rem;
