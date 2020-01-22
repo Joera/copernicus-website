@@ -54,6 +54,8 @@ async function getSupply(contract) {
 
             for (i = 1; i < parseInt(supply) + 1; i++) {
 
+                tokenList[i] = {};
+
                 await contract.ownerOf.call(i, function (error,data)  {
 
                     if(error) { console.log(error); }
@@ -72,7 +74,7 @@ async function getSupply(contract) {
 
                 console.log(tokenList);
             },5000)
-            
+
 
         } else {
             return false;
