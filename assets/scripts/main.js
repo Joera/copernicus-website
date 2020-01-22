@@ -112,3 +112,15 @@ async function getContract(myWeb3) {
 
     });
 }
+
+function showcase(i) {
+
+    if(i === 2) {
+        document.querySelector('.showcase_wrapper').classList.add('grid');
+
+    } else {
+        document.querySelector('.showcase_wrapper').classList.remove('grid');
+    }
+
+
+}
