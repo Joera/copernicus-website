@@ -143,6 +143,8 @@ section.showcase {
     transition: all 500ms ease-in-out;
     display: flex;
     flex-direction: row;
+    margin-top: -20vh;
+    margin-bottom: -20vh;
 }
 
 section.showcase div {
@@ -172,8 +174,6 @@ div.grid {
     grid-gap: 1rem;
     margin: 0rem auto 0rem auto;
     transform: rotate(-90deg);
-    margin-top: -20vh;
-    margin-bottom: -20vh;
 
 }
 
