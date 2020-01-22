@@ -35,9 +35,7 @@ async function getOwnerOf(contract,i) {
 
     console.log(i);
 
-    let owner = await contract.ownerOf.call(i, function (error,data)  {
-
-
+    let owner = await contract.ownerOf.call(i, async function (error,data)  {
 
         if(error) { console.log(error); }
         return data;
