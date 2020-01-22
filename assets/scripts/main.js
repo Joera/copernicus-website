@@ -53,16 +53,19 @@ async function getContract(myWeb3) {
 
             for (i = 1; i < parseInt(supply) + 1; i++) {
 
-                console.log(i);
+                contract.ownerOf(i).call(function (err, data) {
 
-                if (contract.exists(i)) {
-                //
-                //     tokenList[i] = {
-                //
-                //         'owner' : contract.ownerOf(i),
-                //         'tokenUri' : contract.tokenURI(i)
-                //     }
-                }
+                    console.log(data);
+                });
+
+                // contract.exists(i)) {
+                // //
+                // //     tokenList[i] = {
+                // //
+                // //         'owner' : contract.ownerOf(i),
+                // //         'tokenUri' : contract.tokenURI(i)
+                // //     }
+                // }
             }
 
 
