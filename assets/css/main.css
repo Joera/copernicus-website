@@ -243,12 +243,13 @@ div.system {
     display: flex;
     justify-content: center;
     align-items: center;
-    transform: rotateY(90deg);
+
     transform-style: preserve-3d;
     animation-name: invert;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     animation-duration: 11s;
+
     /*transition-property: top, left;*/
     /*transition-duration: .8s;*/
     /*transition-timing-function: ease-in-out;*/
@@ -265,6 +266,7 @@ div.system {
     font-style: normal;
     font-weight: 400;
     color: black;
+    transform: rotate(-33deg);
 
 }
 
