@@ -23,7 +23,7 @@ async function getSupply(contract) {
         }
         if (data) {
 
-            console.log(data);
+            console.log(data.toNumber());
             return data;
         } else {
             return false;
