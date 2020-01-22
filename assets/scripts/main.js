@@ -51,6 +51,8 @@ async function getContract(myWeb3) {
 
             let tokenList = {};
 
+            console.log(supply);
+
             for (let i = 1; i < parseInt(supply); i++) {
 
                 console.log(i);
