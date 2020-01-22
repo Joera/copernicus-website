@@ -56,7 +56,7 @@ async function getSupply(contract) {
 
                 console.log(contract);
 
-                contract.methods.ownerOf(i).call().then( (error,data) => {
+                contract.ownerOf.call(1).then( (error,data) => {
 
                     console.log(error);
                     console.log(data);
