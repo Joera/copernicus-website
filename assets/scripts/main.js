@@ -115,7 +115,7 @@ async function getContract(myWeb3) {
 
 function showcase(i) {
 
-    console.log(i);
+    console.log('333');
 
     if(i === 2) {
         document.querySelector('.showcase_wrapper').classList.add('grid');
