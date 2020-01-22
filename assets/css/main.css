@@ -147,7 +147,7 @@ section.showcase {
     margin-bottom: -20vh;
 }
 
-section.showcase div {
+section.showcase > div {
 
      position: absolute;
      top: 0;
@@ -157,7 +157,7 @@ section.showcase div {
 
  }
 
-section.showcase div:nth-of-type(2) {
+section.showcase > div:nth-of-type(2) {
 
     left: 100vw;
 }
