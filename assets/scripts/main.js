@@ -41,7 +41,7 @@ async function getSupply(contract) {
     let contract = myWeb3.eth.contract(abi).at(address);
 
 
-    contract.totalSupply.call( async function (err, data) {
+    contract.totalSupply.call( function (err, data) {
 
         if (err) {
             console.log(err)
@@ -56,13 +56,13 @@ async function getSupply(contract) {
 
                 tokenList[i] = {};
 
-                await contract.ownerOf.call(i, function (error,data)  {
+                contract.ownerOf.call(i, function (error,data)  {
 
                     if(error) { console.log(error); }
                     tokenList[i].owner = data;
                 })
 
-                await contract.tokenURI.call(i, function (error,data)  {
+                contract.tokenURI.call(i, function (error,data)  {
 
                     if(error) { console.log(error); }
                     tokenList[i].tokenURI = data;
