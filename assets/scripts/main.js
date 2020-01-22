@@ -56,24 +56,24 @@ async function getSupply(contract) {
 
                 tokenList[i] = {};
 
-                contract.ownerOf.call(i, function (error,data)  {
-
-                    if(error) { console.log(error); }
-                    tokenList[i].owner = data;
-                })
-
-                contract.tokenURI.call(i, function (error,data)  {
-
-                    if(error) { console.log(error); }
-                    tokenList[i].tokenURI = data;
-                })
+                // contract.ownerOf.call(i, function (error,data)  {
+                //
+                //     if(error) { console.log(error); }
+                //     tokenList[i].owner = data;
+                // })
+                //
+                // contract.tokenURI.call(i, function (error,data)  {
+                //
+                //     if(error) { console.log(error); }
+                //     tokenList[i].tokenURI = data;
+                // })
 
             }
 
-            setTimeout( function() {
+            // setTimeout( function() {
 
                 console.log(tokenList);
-            },5000)
+            // },5000)
 
 
         } else {
