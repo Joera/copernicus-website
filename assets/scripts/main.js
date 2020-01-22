@@ -22,6 +22,8 @@ async function getSupply(contract) {
             console.log(err)
         }
         if (data) {
+
+            console.log(data);
             return data;
         } else {
             return false;
@@ -42,7 +44,7 @@ async function getContract(myWeb3) {
 
     let supply = await getSupply(contract);
 
-    console.log(supply);
+
 
     // let tokenList = {};
     //
