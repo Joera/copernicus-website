@@ -26,7 +26,7 @@ async function getContract(myWeb3) {
 
     console.log(contract);
 
-    let supply = parseInt(contract.totalSupply());
+    let supply = await contract.totalSupply();
 
     console.log(supply);
 
