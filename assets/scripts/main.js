@@ -48,25 +48,21 @@ async function getContract(myWeb3) {
         if (data) {
 
             let supply = data.toNumber();
-
             let tokenList = {};
-
-            console.log(parseInt(supply));
-
             let i;
 
-            for (i = 1; i < parseInt(supply); i++) {
+            for (i = 1; i < parseInt(supply) + 1; i++) {
 
                 console.log(i);
 
-                // if (contract.exists(i)) {
+                if (contract.exists(i)) {
                 //
                 //     tokenList[i] = {
                 //
                 //         'owner' : contract.ownerOf(i),
                 //         'tokenUri' : contract.tokenURI(i)
                 //     }
-                // }
+                }
             }
 
 
