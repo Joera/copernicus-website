@@ -278,6 +278,12 @@ div.system {
 
 }
 
+.orbit:nth-of-type(3) div span, .orbit:nth-of-type(4) div span {
+
+    transform: rotate(33deg);
+
+}
+
 .satelite_1  {
 
     top: -1rem;

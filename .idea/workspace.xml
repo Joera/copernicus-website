@@ -19,7 +19,7 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="235">
+            <state relative-caret-position="-1198">
               <caret line="100" column="41" selection-start-line="100" selection-start-column="41" selection-end-line="100" selection-end-column="41" />
             </state>
           </provider>
@@ -28,8 +28,8 @@
       <file leaf-file-name="main.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="670">
-              <caret line="557" column="23" lean-forward="true" selection-start-line="557" selection-start-column="23" selection-end-line="557" selection-end-column="23" />
+            <state relative-caret-position="562">
+              <caret line="286" column="14" lean-forward="true" selection-start-line="286" selection-start-column="14" selection-end-line="286" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -165,12 +165,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1579687466017</updated>
-      <workItem from="1579687467223" duration="23280000" />
+      <workItem from="1579687467223" duration="23408000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23280000" />
+    <option name="totallyTimeSpent" value="23408000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="229" y="25" width="1645" height="957" extended-state="0" />
@@ -369,15 +369,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
+        <state relative-caret-position="-1198">
           <caret line="100" column="41" selection-start-line="100" selection-start-column="41" selection-end-line="100" selection-end-column="41" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="670">
-          <caret line="557" column="23" lean-forward="true" selection-start-line="557" selection-start-column="23" selection-end-line="557" selection-end-column="23" />
+        <state relative-caret-position="562">
+          <caret line="286" column="14" lean-forward="true" selection-start-line="286" selection-start-column="14" selection-end-line="286" selection-end-column="14" />
         </state>
       </provider>
     </entry>
