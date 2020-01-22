@@ -194,8 +194,9 @@ div.system {
     height: 32vh;
     width: 32vh;
     border-radius: 50%;
-    background: linear-gradient(90deg, rgba(219,232,7,1) 0%, rgba(219,232,7,1) 93%);
+    background: linear-gradient(90deg, rgba(219,232,7,1) 100%, rgba(219,232,7,1) 100%);
     transform: rotateX(0deg);
+    transform: rotateY(-70.5deg);
 
 }
 
