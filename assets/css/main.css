@@ -204,7 +204,7 @@ div.system {
 
 }
 
-.satelite {
+.orbit {
     position: absolute;
     top: 26vh;
     left: calc(50% - 24vh);
@@ -225,7 +225,7 @@ div.system {
 
 }
 
-.satelite div {
+.orbit div {
 
     position: absolute;
     width: 3rem;
@@ -250,7 +250,7 @@ div.system {
 
 }
 
-.satelite div span {
+.orbit div span {
 
     font-size: 1.2rem;
     font-family: "Fell Type A", "Fell Type B";
@@ -260,26 +260,26 @@ div.system {
 
 }
 
-#satelite_1 div {
+#satelite_1  {
 
     top: -1rem;
     left: calc(50% - 1rem);
     right: -1rem;
 }
 
-#satelite_2 div {
+#satelite_2  {
 
     top: calc(50% - 1rem);
     right: -1rem;
 }
 
-#satelite_3 div {
+#satelite_3  {
 
     left: calc(50% - 1rem);
     bottom: -1rem;
 }
 
-#satelite_4 div {
+#satelite_4  {
 
     top: calc(50% - 1rem);
     left: -1rem;
