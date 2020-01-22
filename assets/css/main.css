@@ -175,6 +175,27 @@ section.showcase > div.showcase_wrapper > div {
     /*left: 100vw;*/
 /*}*/
 
+div.system {
+
+    width: 100vh;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#sun {
+
+    height: 32rem;
+    width: 32rem;
+    border-radius: 100%;
+    background: linear-gradient(180deg, rgba(219,232,7,1) 0%, rgba(255,0,0,1) 93%);
+
+
+}
+
 
 div.grid {
 
