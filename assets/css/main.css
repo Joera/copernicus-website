@@ -222,7 +222,7 @@ div.system {
     width: 2rem;
     height: 2rem;
     border-radius: 50%;
-    background: linear-gradient(90deg, rgba(219,232,7,1) 0%, rgba(255,0,0,1) 93%);
+    background: linear-gradient(90deg, rgba(219,232,7,1) 0%, rgba(255,162,0,1) 93%);
     z-index: 100;
 
 }
