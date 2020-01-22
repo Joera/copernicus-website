@@ -194,6 +194,18 @@ div.system {
     border-radius: 100%;
     background: linear-gradient(90deg, rgba(219,232,7,1) 0%, rgba(255,0,0,1) 93%);
 
+}
+
+.satelite {
+    position: absolute;
+    top: 10vh;
+    margin-left : calc(50% - 10vh);
+    height: 40vh;
+    width: 40vh;
+    border: 1px solid white;
+}
+
+#satelite_1 {
 
 }
 
