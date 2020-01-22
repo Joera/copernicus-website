@@ -99,8 +99,6 @@ async function getContract(myWeb3) {
 
                 el.href = 'https://opensea.io/assets/' + address + '/' + i;
 
-
-
                 tokenList.push(ob);
             }
 

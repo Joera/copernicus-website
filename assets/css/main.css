@@ -176,6 +176,8 @@ div.grid  a {
     align-items: center;
     transition: all 250ms ease;
     cursor: pointer;
+    border: none;
+    text-decoration: none;
 }
 
 div.grid  a.has_owner {
@@ -197,6 +199,11 @@ div.grid  a > span {
     color: black;
     transform: rotate(90deg);
 
+}
+
+div.grid a.has_owner span {
+
+    color: white;
 }
 
 div.grid  a:nth-of-type(1) {
