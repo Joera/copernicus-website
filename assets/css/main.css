@@ -231,10 +231,23 @@ div.system {
     width: 2rem;
     height: 2rem;
     border-radius: 50%;
-    background: linear-gradient(90deg, rgba(219,232,7,1) 0%, rgba(255,162,0,1) 93%);
+    background: linear-gradient(90deg, rgba(219,232,7,1) 0%, rgba(255,53,0,1) 63%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     /*z-index: 100;*/
-    transform: rotateX(0deg);
+    /*transform: rotateX(-90deg) rotateY(90deg);*/
 
+}
+
+.satelite div span {
+
+    font-size: 1.2rem;
+    font-family: "Fell Type A", "Fell Type B";
+    font-style: normal;
+    font-weight: 400;
+    color: black;
+    transform: rotate(90deg);
 }
 
 #satelite_1 div {
