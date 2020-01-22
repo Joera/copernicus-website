@@ -225,6 +225,14 @@ div.system {
 
 }
 
+.orbit:nth-of-type(2n) {
+    animation-delay: 1s;
+}
+
+.orbit:nth-of-type(2n) div {
+    animation-delay: 1s;
+}
+
 .orbit div {
 
     position: absolute;
@@ -284,6 +292,7 @@ div.system {
     top: calc(50% - 1rem);
     left: -1rem;
 }
+
 
 
 div.grid {
