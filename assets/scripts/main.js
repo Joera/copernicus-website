@@ -56,12 +56,12 @@ async function getSupply(contract) {
 
                 console.log(contract);
 
-                let owner = contract.ownerOf(i).call().then( (error,data) => {
-
-                    console.log(error);
-                    console.log(data);
-
-                })
+                // contract.ownerOf(i).call().then( (error,data) => {
+                //
+                //     console.log(error);
+                //     console.log(data);
+                //
+                // })
 
 
 
