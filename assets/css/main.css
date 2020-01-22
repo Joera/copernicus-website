@@ -192,7 +192,7 @@ div.system {
 
     height: 32vh;
     width: 32vh;
-    border-radius: 100%;
+    border-radius: 50%;
     background: linear-gradient(90deg, rgba(219,232,7,1) 0%, rgba(255,0,0,1) 93%);
 
 }
@@ -205,6 +205,14 @@ div.system {
     width: 40vh;
     border: 1px solid white;
     overflow: visible;
+    transform-style: preserve-3d;
+    border-radius: 50%;
+    animation-name: orbit;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 353.36998s;\
+    transition-duration: .8s;
+    transition-timing-function: ease-in-out;
 }
 
 #satelite_1 div {
@@ -438,4 +446,13 @@ div.grid  a:nth-of-type(21) {
 .showcase_controls > div:first-of-type {
 
     margin-right: 1rem;
+}
+
+@keyframes orbit {
+    0% {
+        transform: rotateZ(0deg); }
+
+    100% {
+        transform: rotateZ(-360deg); }
+
 }
