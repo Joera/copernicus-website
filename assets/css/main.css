@@ -206,10 +206,10 @@ div.system {
 
 .satelite {
     position: absolute;
-    top: 30vh;
-    left: calc(50% - 20vh);
-    height: 40vh;
-    width: 40vh;
+    top: 26vh;
+    left: calc(50% - 24vh);
+    height: 48vh;
+    width: 48vh;
     border: 1px solid white;
     overflow: visible;
     transform-style: preserve-3d;
