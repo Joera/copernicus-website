@@ -185,6 +185,7 @@ div.system {
     justify-content: center;
     align-items: center;
     margin: 0 auto;
+    transform-style: preserve-3d;
     transform: rotateX(-75deg);
 
 }
@@ -200,6 +201,7 @@ div.system {
     transform: rotateX(0deg);
     transform: rotateY(-70.5deg);
     z-index: 99;
+    transform-style: preserve-3d;
 
 }
 
@@ -219,8 +221,8 @@ div.system {
     animation-duration: 11s;
     transition-duration: .8s;
     transition-timing-function: ease-in-out;
-    z-index: 99;
-    transform: rotateX(0deg);
+    z-index: 100;
+    /*transform: rotateX(0deg);*/
 
 }
 
@@ -231,7 +233,7 @@ div.system {
     height: 2rem;
     border-radius: 50%;
     background: linear-gradient(90deg, rgba(219,232,7,1) 0%, rgba(255,162,0,1) 93%);
-    z-index: 100;
+    /*z-index: 100;*/
     transform: rotateX(0deg);
 
 }
