@@ -133,6 +133,33 @@ ul.menu > li {
 }
 
 
+div.showcase {
+
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    margin-left: 0;
+    transition: all 500ms ease-in-out;
+    display: flex;
+    flex-direction: row;
+}
+
+div.showcase div {
+
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100vw;
+     height: 100vh;
+
+ }
+
+div.showcase div:nth-of-type(2) {
+
+    left: 100vw;
+}
+
 
 div.grid {
 

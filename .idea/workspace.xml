@@ -2,27 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d06e91ff-6751-4ab8-8a06-9cd677dfff40" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/assets/json/ticket_1.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/json/ticket_1.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/json/ticket_10.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/json/ticket_10.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/json/ticket_11.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/json/ticket_11.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/json/ticket_12json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/json/ticket_12json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/json/ticket_13.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/json/ticket_13.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/json/ticket_14.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/json/ticket_14.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/json/ticket_15.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/json/ticket_15.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/json/ticket_16.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/json/ticket_16.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/json/ticket_17.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/json/ticket_17.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/json/ticket_18.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/json/ticket_18.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/json/ticket_19.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/json/ticket_19.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/json/ticket_2.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/json/ticket_2.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/json/ticket_20.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/json/ticket_20.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/json/ticket_21.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/json/ticket_21.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/json/ticket_3.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/json/ticket_3.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/json/ticket_4.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/json/ticket_4.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/json/ticket_5.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/json/ticket_5.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/json/ticket_6.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/json/ticket_6.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/json/ticket_7.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/json/ticket_7.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/json/ticket_8.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/json/ticket_8.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/json/ticket_9.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/json/ticket_9.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -36,92 +17,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ticket_12json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/json/ticket_12json">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+            <state relative-caret-position="705">
+              <caret line="47" selection-start-line="47" selection-end-line="47" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ticket_13.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/json/ticket_13.json">
+      <file leaf-file-name="main.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/assets/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ticket_14.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/json/ticket_14.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ticket_15.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/json/ticket_15.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="83" selection-start-line="3" selection-start-column="83" selection-end-line="3" selection-end-column="83" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ticket_16.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/json/ticket_16.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="83" selection-start-line="3" selection-start-column="83" selection-end-line="3" selection-end-column="83" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ticket_17.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/json/ticket_17.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ticket_18.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/json/ticket_18.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ticket_19.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/json/ticket_19.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ticket_20.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/json/ticket_20.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ticket_21.json" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/assets/json/ticket_21.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+            <state relative-caret-position="536">
+              <caret line="159" column="16" selection-start-line="159" selection-start-column="16" selection-end-line="159" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -135,9 +44,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/assets/json/erc721.json" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/assets/scripts/main.js" />
-        <option value="$PROJECT_DIR$/assets/css/main.css" />
         <option value="$PROJECT_DIR$/assets/json/ticket_1.json" />
         <option value="$PROJECT_DIR$/assets/json/ticket_2.json" />
         <option value="$PROJECT_DIR$/assets/json/ticket_3.json" />
@@ -159,6 +66,8 @@
         <option value="$PROJECT_DIR$/assets/json/ticket_19.json" />
         <option value="$PROJECT_DIR$/assets/json/ticket_20.json" />
         <option value="$PROJECT_DIR$/assets/json/ticket_21.json" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/assets/css/main.css" />
       </list>
     </option>
   </component>
@@ -169,8 +78,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="109" />
-    <option name="y" value="35" />
+    <option name="x" value="229" />
+    <option name="y" value="25" />
     <option name="width" value="1645" />
     <option name="height" value="957" />
   </component>
@@ -248,15 +157,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1579687466017</updated>
-      <workItem from="1579687467223" duration="10106000" />
+      <workItem from="1579687467223" duration="11344000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10106000" />
+    <option name="totallyTimeSpent" value="11344000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="109" y="35" width="1645" height="957" extended-state="0" />
+    <frame x="229" y="25" width="1645" height="957" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24953213" />
@@ -296,24 +205,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="626">
-          <caret line="70" selection-start-line="70" selection-end-line="70" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/scripts/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1485">
           <caret line="99" column="75" selection-start-line="99" selection-start-column="75" selection-end-line="99" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="640">
-          <caret line="205" column="17" selection-start-line="205" selection-start-column="17" selection-end-line="205" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -394,31 +289,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/json/ticket_12json">
+    <entry file="file://$PROJECT_DIR$/assets/json/ticket_21.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
-          <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/json/ticket_13.json">
+    <entry file="file://$PROJECT_DIR$/assets/json/ticket_20.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
-          <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/json/ticket_14.json">
+    <entry file="file://$PROJECT_DIR$/assets/json/ticket_19.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
-          <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/json/ticket_15.json">
+    <entry file="file://$PROJECT_DIR$/assets/json/ticket_18.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="83" selection-start-line="3" selection-start-column="83" selection-end-line="3" selection-end-column="83" />
+        <state relative-caret-position="90">
+          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/json/ticket_17.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -429,38 +331,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/json/ticket_17.json">
+    <entry file="file://$PROJECT_DIR$/assets/json/ticket_15.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+        <state relative-caret-position="45">
+          <caret line="3" column="83" selection-start-line="3" selection-start-column="83" selection-end-line="3" selection-end-column="83" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/json/ticket_18.json">
+    <entry file="file://$PROJECT_DIR$/assets/json/ticket_14.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
-          <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/json/ticket_19.json">
+    <entry file="file://$PROJECT_DIR$/assets/json/ticket_13.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
-          <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/json/ticket_20.json">
+    <entry file="file://$PROJECT_DIR$/assets/json/ticket_12json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
-          <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/json/ticket_21.json">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+        <state relative-caret-position="705">
+          <caret line="47" selection-start-line="47" selection-end-line="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="536">
+          <caret line="159" column="16" selection-start-line="159" selection-start-column="16" selection-end-line="159" selection-end-column="16" />
         </state>
       </provider>
     </entry>
