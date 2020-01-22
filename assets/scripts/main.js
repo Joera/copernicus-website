@@ -50,7 +50,7 @@ async function getContract(myWeb3) {
     let contract = myWeb3.eth.contract(abi).at(address);
 
 
-    contract.totalSupply.call( function (err, data) {
+    await contract.totalSupply.call( async function (err, data) {
 
         if (err) {
             console.log(err)
@@ -65,7 +65,7 @@ async function getContract(myWeb3) {
 
                  let ob = {};
 
-                ob.owner = getOwnerOf;
+                ob.owner = await getOwnerOf(contract,i);
 
                 // contract.ownerOf.call(i, function (error,data)  {
                 //
