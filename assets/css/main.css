@@ -210,7 +210,7 @@ div.system {
     left: calc(50% - 24vh);
     height: 48vh;
     width: 48vh;
-    border: 1px solid white;
+    /*border: 1px solid white;*/
     overflow: visible;
     transform-style: preserve-3d;
     border-radius: 50%;
