@@ -31,17 +31,19 @@ async function getSupply(contract) {
     });
 }
 
-async function getOwnerOf(contract,i) {
+function getOwnerOf(contract,i) {
 
-    console.log(i);
+    return new Promise (function (resolve, reject) {
 
-    let owner = await contract.ownerOf.call(i, async function (error,data)  {
+        contract.ownerOf.call(i, async function (error,data)  {
 
-        if(error) { console.log(error); }
-        return data;
-    })
-
-    console.log(owner);
+            if(error) {
+                reject(error)
+            } else {
+                resolve(data);
+            }
+        })
+    });
 }
 
 async function getContract(myWeb3) {
