@@ -139,9 +139,6 @@ section.showcase {
     width: 100vw;
     height: 100vh;
     overflow: hidden;
-    margin-left: 0;
-    transition: all 500ms ease-in-out;
-
     margin-top: -20vh;
     margin-bottom: -20vh;
 }
@@ -155,6 +152,7 @@ div.showcase_wrapper {
     display: flex;
     flex-direction: row;
     margin-left: 0vw;
+    transition: all 500ms ease-in-out;
 }
 
 
