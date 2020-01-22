@@ -31,6 +31,21 @@ async function getSupply(contract) {
     });
 }
 
+function getTokenURI(contract,i) {
+
+    return new Promise (function (resolve, reject) {
+
+        contract.tokenURI.call(i, async function (error,data)  {
+
+            if(error) {
+                reject(error)
+            } else {
+                resolve(data);
+            }
+        })
+    });
+}
+
 function getOwnerOf(contract,i) {
 
     return new Promise (function (resolve, reject) {
@@ -66,6 +81,7 @@ async function getContract(myWeb3) {
             let supply = data.toNumber();
             let tokenList = [];
             let i;
+            let el;
 
             for (i = 1; i < parseInt(supply) + 1; i++) {
 
@@ -73,25 +89,16 @@ async function getContract(myWeb3) {
 
                 ob.owner = await getOwnerOf(contract,i);
 
-                // contract.ownerOf.call(i, function (error,data)  {
-                //
-                //     if(error) { console.log(error); }
-                //     tokenList[i].owner = data;
-                // })
-                //
-                // contract.tokenURI.call(i, function (error,data)  {
-                //
-                //     if(error) { console.log(error); }
-                //     tokenList[i].tokenURI = data;
-                // })
+                ob.tokenURI = await getTokenURI(contract,i);
+
+                el = document.querySelector(".grid div:nth-of-type(" + i + ")");
+
+                el.classList.add(ob.owner);
 
                 tokenList.push(ob);
             }
 
-            // setTimeout( function() {
 
-                console.log(tokenList);
-            // },5000)
 
 
         } else {
