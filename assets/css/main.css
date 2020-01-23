@@ -313,8 +313,9 @@ div.system {
 .orbit a span.address {
     display: none;
     position: absolute;
-    left: -10rem;
+    left: -22rem;
     color: white;
+    /*align-self: flex-end;*/
 }
 
 .orbit a:hover span.address {
