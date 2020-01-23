@@ -202,6 +202,12 @@ div.system {
 
 }
 
+#sun svg {
+
+    height: 3rem;
+    width: auto;
+}
+
 .orbit {
     position: absolute;
     top: 22vh;
