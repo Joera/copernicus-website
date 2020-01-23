@@ -83,7 +83,7 @@ async function getContract(myWeb3) {
             let i;
             let el, el_grid;
 
-            let els = [].slice.call(document.querySelector(".system a"));
+            let els = [].slice.call(document.querySelectorAll(".system a"));
 
             console.log(els);
 
