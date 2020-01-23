@@ -239,7 +239,7 @@ div.system {
 
 .orbit:nth-of-type(5)  {
     animation-name: orbit_vert;
-    height: 66vh;
+    height: 56vh;
     width: 56vh;
 }
 
