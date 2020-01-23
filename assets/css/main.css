@@ -313,7 +313,8 @@ div.system {
 .orbit a span.address {
     display: none;
     position: absolute;
-    left: -22rem;
+    top: 0;
+    left: -24rem;
     color: white;
     /*align-self: flex-end;*/
 }
