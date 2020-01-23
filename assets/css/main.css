@@ -161,14 +161,11 @@ div.showcase_wrapper.grid_view {
     margin-left: -100vw;
 }
 
-
-
 section.showcase > div.showcase_wrapper > div {
 
      width: 100vw;
      height: 100vh;
-
- }
+}
 
 /*section.showcase > div.showcase_wrapper > div:nth-of-type(2) {*/
 
@@ -187,7 +184,6 @@ div.system {
     margin: 0 auto;
     transform-style: preserve-3d;
     transform: rotateX(75deg);
-
 }
 
 #sun {
@@ -297,6 +293,18 @@ div.system {
 .orbit:nth-of-type(3) div span, .orbit:nth-of-type(4) div span {
 
     transform: rotate(33deg);
+
+}
+
+.orbit:nth-of-type(5) div span {
+
+    transform: rotate(90deg);
+
+}
+
+.orbit:nth-of-type(6) div span {
+
+    transform: rotate(0deg);
 
 }
 
