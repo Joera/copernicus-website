@@ -189,7 +189,9 @@ div.system {
 #sun {
 
     position: relative;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 32vh;
     width: 32vh;
     border-radius: 50%;
