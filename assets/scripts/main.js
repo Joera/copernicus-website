@@ -85,6 +85,8 @@ async function getContract(myWeb3) {
 
             let els = [].slice.call(document.querySelector(".system a"));
 
+            console.log(els);
+
             for (i = 1; i < parseInt(supply) + 1; i++) {
 
                  let ob = {};
