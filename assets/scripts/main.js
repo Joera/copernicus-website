@@ -99,11 +99,11 @@ async function getContract(myWeb3) {
 
                 if(ob.owner && ob.owner !== undefined) {
                     el_grid.classList.add('has_owner');
-                    els[i].classList.add('has_owner');
+                    els[i - 1].classList.add('has_owner');
                     els[i].querySelector('.span.address').innerText = ob.owner;
                 }
 
-                els[i].href = 'https://opensea.io/assets/' + address + '/' + i;
+                els[i - 1].href = 'https://opensea.io/assets/' + address + '/' + i;
                 el_grid.href = 'https://opensea.io/assets/' + address + '/' + i;
 
                 // tokenList.push(ob);
