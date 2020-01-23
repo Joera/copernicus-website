@@ -206,10 +206,10 @@ div.system {
 
 .orbit {
     position: absolute;
-    top: 26vh;
-    left: calc(50% - 24vh);
-    height: 48vh;
-    width: 48vh;
+    top: 22vh;
+    left: calc(50% - 33vh);
+    height: 56vh;
+    width: 66vh;
     /*border: 1px solid white;*/
     overflow: visible;
     transform-style: preserve-3d;
@@ -239,6 +239,22 @@ div.system {
 
 .orbit:nth-of-type(3) div, .orbit:nth-of-type(4) div {
     animation-name: invert_rev;
+}
+
+.orbit:nth-of-type(5)  {
+    animation-name: orbit_vert;
+}
+
+.orbit:nth-of-type(5) div  {
+    animation-name: invert_vert;
+}
+
+.orbit:nth-of-type(6)  {
+    animation-name: orbit_hor
+}
+
+.orbit:nth-of-type(6) div  {
+    animation-name: invert_hor;
 }
 
 .orbit div {
@@ -550,7 +566,26 @@ div.grid  a:nth-of-type(21) {
     100% {
         transform: rotateY(-33deg) rotateZ(-360deg);
     }
+}
 
+@keyframes orbit_vert {
+    0% {
+        transform: rotateY(-90deg) rotateZ(0deg);
+    }
+
+    100% {
+        transform: rotateY(-90deg) rotateZ(-360deg);
+    }
+}
+
+@keyframes orbit_hor {
+    0% {
+        transform: rotateY(0deg) rotateZ(0deg);
+    }
+
+    100% {
+        transform: rotateY(0deg) rotateZ(-360deg);
+    }
 }
 
 @keyframes invert {
@@ -562,6 +597,22 @@ div.grid  a:nth-of-type(21) {
  }
 
 @keyframes invert_rev {
+    0% {
+        transform: rotateX(-90deg) rotateY(360deg) rotateZ(0deg); }
+
+    100% {
+        transform: rotateX(-90deg) rotateY(0deg) rotateZ(0deg); }
+}
+
+@keyframes invert_vert {
+    0% {
+        transform: rotateX(-90deg) rotateY(360deg) rotateZ(0deg); }
+
+    100% {
+        transform: rotateX(-90deg) rotateY(0deg) rotateZ(0deg); }
+}
+
+@keyframes invert_hor {
     0% {
         transform: rotateX(-90deg) rotateY(360deg) rotateZ(0deg); }
 
