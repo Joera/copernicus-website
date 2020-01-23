@@ -284,6 +284,8 @@ div.system {
 
     border: none;
     text-decoration: none;
+    z-index: 9999;
+
 
     /*transition-property: top, left;*/
     /*transition-duration: .8s;*/
@@ -316,7 +318,7 @@ div.system {
     top: 7.6rem;
     left: -20.5rem;
     color: white;
-    z-index: 200;
+
     /*align-self: flex-end;*/
 }
 
