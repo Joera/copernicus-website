@@ -241,6 +241,7 @@ div.system {
     animation-name: orbit_vert;
     height: 56vh;
     width: 56vh;
+    left: calc(50% - 28vh);
 }
 
 .orbit:nth-of-type(5) div  {
