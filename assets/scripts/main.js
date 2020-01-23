@@ -81,7 +81,7 @@ async function getContract(myWeb3) {
             let supply = data.toNumber();
             let tokenList = [];
             let i;
-            let el;
+            let el, el_grid;
 
             for (i = 1; i < parseInt(supply) + 1; i++) {
 
@@ -91,19 +91,19 @@ async function getContract(myWeb3) {
 
                 ob.tokenURI = await getTokenURI(contract,i);
 
-                el = document.querySelector(".grid a:nth-of-type(" + i + ")");
+                el = document.querySelector(".system a:nth-of-type(" + i + ")");
+                el_grid = document.querySelector(".grid a:nth-of-type(" + i + ")");
 
                 if(ob.owner && ob.owner !== undefined) {
+                    el_grid.classList.add('has_owner');
                     el.classList.add('has_owner');
                 }
 
                 el.href = 'https://opensea.io/assets/' + address + '/' + i;
+                el_grid.href = 'https://opensea.io/assets/' + address + '/' + i;
 
-                tokenList.push(ob);
+                // tokenList.push(ob);
             }
-
-
-
 
         } else {
             return false;

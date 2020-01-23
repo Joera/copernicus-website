@@ -233,7 +233,7 @@ div.system {
     animation-delay: 1.5s;
 }
 
-.orbit:nth-of-type(2n) div {
+.orbit:nth-of-type(2n) a {
     animation-delay: 1.5s;
 }
 
@@ -241,7 +241,7 @@ div.system {
     animation-name: orbit_rev;
 }
 
-.orbit:nth-of-type(3) div, .orbit:nth-of-type(4) div {
+.orbit:nth-of-type(3) a, .orbit:nth-of-type(4) a {
     animation-name: invert_rev;
 }
 
@@ -252,7 +252,7 @@ div.system {
     left: calc(50% - 28vh);
 }
 
-.orbit:nth-of-type(5) div  {
+.orbit:nth-of-type(5) a  {
     animation-name: invert_vert;
 }
 
@@ -260,12 +260,13 @@ div.system {
     animation-name: orbit_hor
 }
 
-.orbit:nth-of-type(6) div  {
+.orbit:nth-of-type(6) a  {
     animation-name: invert_hor;
 }
 
-.orbit div {
+.orbit a {
 
+    display: block;
     position: absolute;
     width: 3rem;
     height: 3rem;
@@ -281,6 +282,9 @@ div.system {
     animation-timing-function: linear;
     animation-duration: 11s;
 
+    border: none;
+    text-decoration: none;
+
     /*transition-property: top, left;*/
     /*transition-duration: .8s;*/
     /*transition-timing-function: ease-in-out;*/
@@ -290,7 +294,12 @@ div.system {
 
 }
 
-.orbit div span {
+.orbit a.has_owner {
+
+    background: linear-gradient(180deg, rgba(0,116,255,1) 0%, rgba(0,40,90,1) 93%);
+}
+
+.orbit a span {
 
     font-size: 1.2rem;
     font-family: "Fell Type A", "Fell Type B";
@@ -301,19 +310,30 @@ div.system {
 
 }
 
-.orbit:nth-of-type(3) div span, .orbit:nth-of-type(4) div span {
+.orbit a span.address {
+    display: none;
+    position: absolute;
+    left: -10rem;
+    color: white;
+}
+
+.orbit a:hover span.address {
+    display: block;
+}
+
+.orbit:nth-of-type(3) a span, .orbit:nth-of-type(4) a span {
 
     transform: rotate(33deg);
 
 }
 
-.orbit:nth-of-type(5) div span {
+.orbit:nth-of-type(5) a span {
 
     transform: rotate(90deg);
 
 }
 
-.orbit:nth-of-type(6) div span {
+.orbit:nth-of-type(6) a span {
 
     transform: rotate(0deg);
 
