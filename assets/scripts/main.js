@@ -111,8 +111,8 @@ async function getContract(myWeb3) {
         let tokenList = [];
         let i;
         let el, el_grid;
-    //
-    //     console.log(supply);
+
+        console.log(supply);
     //
     //     // 0x404c085967bb7811120ed38a642f67ff50ff6e0443795ab1ba2dfb788f7d2f25
     //
@@ -140,16 +140,16 @@ async function getContract(myWeb3) {
     //         // tokenList.push(ob);
     //     }
     //
-    //     for (i = parseInt(supply) + 1; i < els.length; i++) {
-    //
-    //         els[i].addEventListener('click', async function(ev) {
-    //
-    //             let el = (ev.target.type === 'a' ) ? ev.target : ev.target.parentNode;
-    //             let ret = await mint(myWeb3,contract,el.getAttribute('data-token'));
-    //
-    //         }, false);
-    //
-    //     }
+        for (i = parseInt(supply) + 1; i < els.length; i++) {
+
+            els[i].addEventListener('click', async function(ev) {
+
+                let el = (ev.target.type === 'a' ) ? ev.target : ev.target.parentNode;
+                let ret = await mint(myWeb3,contract,el.getAttribute('data-token'));
+
+            }, false);
+
+        }
     //
     });
 }
