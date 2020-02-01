@@ -138,7 +138,7 @@ async function getContract(myWeb3) {
             // els[i - 1].href = 'https://opensea.io/assets/' + address + '/' + i;
             // el_grid.href = 'https://opensea.io/assets/' + address + '/' + i;
 
-            console.log(ob);
+            // console.log(ob);
     //
     //         // tokenList.push(ob);
         }
