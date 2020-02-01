@@ -111,58 +111,52 @@ async function getContract(myWeb3) {
         if (err) {
             console.log(err)
         }
-        if (data) {
+        
+        let supply = data.toNumber() || 0;
+        let tokenList = [];
+        let i;
+        let el, el_grid;
 
-            let supply = data.toNumber();
-            let tokenList = [];
-            let i;
-            let el, el_grid;
-
-            console.log('2');
+        console.log('2');
 
 
-            console.log(supply);
+        console.log(supply);
 
-            let els = [].slice.call(document.querySelectorAll(".system a"));
+        let els = [].slice.call(document.querySelectorAll(".system a"));
 
-            for (i = 1; i < parseInt(supply) + 1; i++) {
+        for (i = 1; i < parseInt(supply) + 1; i++) {
 
-                let ob = {};
+            let ob = {};
 
-                ob.owner = await getOwnerOf(contract,i);
+            ob.owner = await getOwnerOf(contract,i);
 
-                ob.tokenURI = await getTokenURI(contract,i);
+            ob.tokenURI = await getTokenURI(contract,i);
 
-                el_grid = document.querySelector(".grid a:nth-of-type(" + i + ")");
+            el_grid = document.querySelector(".grid a:nth-of-type(" + i + ")");
 
-                if(ob.owner && ob.owner !== undefined) {
-                    el_grid.classList.add('has_owner');
-                    els[i - 1].classList.add('has_owner');
-                    els[i - 1].querySelector('span.address').innerText = ob.owner;
-                }
-
-                els[i - 1].href = 'https://opensea.io/assets/' + address + '/' + i;
-                el_grid.href = 'https://opensea.io/assets/' + address + '/' + i;
-
-                // tokenList.push(ob);
+            if(ob.owner && ob.owner !== undefined) {
+                el_grid.classList.add('has_owner');
+                els[i - 1].classList.add('has_owner');
+                els[i - 1].querySelector('span.address').innerText = ob.owner;
             }
 
-            for (i = parseInt(supply) + 1; i < els.length; i++) {
+            els[i - 1].href = 'https://opensea.io/assets/' + address + '/' + i;
+            el_grid.href = 'https://opensea.io/assets/' + address + '/' + i;
 
-                els[i].addEventListener('click', async function(ev) {
-
-                    console.log(ev);
-
-                    let ret = await mint(myWeb3,contract,i);
-
-                }, false);
-
-            }
-
-        } else {
-            return false;
+            // tokenList.push(ob);
         }
 
+        for (i = parseInt(supply) + 1; i < els.length; i++) {
+
+            els[i].addEventListener('click', async function(ev) {
+
+                console.log(ev);
+
+                let ret = await mint(myWeb3,contract,i);
+
+            }, false);
+
+        }
 
     });
 }
