@@ -70,7 +70,7 @@ function mint(myWeb3,contract,i) {
         console.log(i);
 
 
-        contract.mintUniqueTokenTo(myWeb3.eth.accounts[0], parseInt(i),tokenURIs,function(error,data) {
+        contract.mintUniqueTokenTo(myWeb3.eth.accounts[0], 10,tokenURIs,function(error,data) {
 
             if(error) {
                 console.log(error);
