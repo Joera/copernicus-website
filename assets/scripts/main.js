@@ -63,13 +63,11 @@ function getOwnerOf(contract,i) {
 
 function mint(myWeb3,contract,i) {
 
-
-
     return new Promise (function (resolve, reject) {
 
         console.log(i);
 
-        let j = 11;
+        let j = 1;
         let tokenURIs = 'https://projectcopernicus.autonomous-times.com/assets/json/ticket_' + j + '.json';
 
         contract.mintUniqueTokenTo(myWeb3.eth.accounts[0], j,tokenURIs,{ from : myWeb3.eth.accounts[0], gas : 5000000 }, function(error,data) {
@@ -116,9 +114,6 @@ async function getContract(myWeb3) {
         let tokenList = [];
         let i;
         let el, el_grid;
-
-        console.log('2');
-
 
         console.log(supply);
 
