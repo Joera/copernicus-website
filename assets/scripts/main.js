@@ -65,9 +65,7 @@ function mint(myWeb3,contract,i) {
 
     return new Promise (function (resolve, reject) {
 
-        console.log('3');
-
-        console.log(myWeb3.accounts[0]);
+        console.log(myWeb3);
 
         contract.methods
             .mintUniqueTokenTo(myWeb3.accounts[0], i,'')
@@ -130,11 +128,8 @@ async function getContract(myWeb3) {
 
             for (i = parseInt(supply) + 1; i < els.length; i++) {
 
-                console.log('1');
-
                 els[i].addEventListener('click', async function() {
-
-                    console.log('2');
+                    
                     let ret = await mint(myWeb3,contract,i);
 
                 }, false);
