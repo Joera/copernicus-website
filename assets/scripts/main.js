@@ -144,9 +144,9 @@ async function getContract(myWeb3) {
 
                 console.log(ev.target.nodeName);
 
-                let el = (ev.target.nodeName === 'a' ) ? ev.target : ev.target.parentNode;
+                let el = (ev.target.nodeName === 'A' ) ? ev.target : ev.target.parentNode;
 
-                console.log(el);
+                console.log(el.getAttribute('data-token'));
 
                 let ret = await mint(myWeb3,contract,el.getAttribute('data-token'));
 
