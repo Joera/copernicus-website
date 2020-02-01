@@ -140,7 +140,9 @@ async function getContract(myWeb3) {
 
             for (i = parseInt(supply) + 1; i < els.length; i++) {
 
-                els[i].addEventListener('click', async function() {
+                els[i].addEventListener('click', async function(ev) {
+
+                    console.log(ev);
 
                     let ret = await mint(myWeb3,contract,i);
 
