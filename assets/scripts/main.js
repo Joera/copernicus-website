@@ -142,9 +142,9 @@ async function getContract(myWeb3) {
 
             els[i].addEventListener('click', async function(ev) {
 
-                console.log(ev.target.type);
+                console.log(ev.target.nodeName);
 
-                let el = (ev.target.type === 'a' ) ? ev.target : ev.target.parentNode;
+                let el = (ev.target.nodeName === 'a' ) ? ev.target : ev.target.parentNode;
 
                 console.log(el);
 
