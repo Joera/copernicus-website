@@ -78,7 +78,6 @@ function mint(myWeb3,contract,i) {
                 console.log(error);
                 reject(error)
             } else {
-                console.log(data);
                 resolve(data);
             }
 
@@ -119,11 +118,13 @@ async function getContract(myWeb3) {
 
         let els = [].slice.call(document.querySelectorAll(".system a"));
 
-        for (i = 1; i < parseInt(supply) + 1; i++) {
+        for (el of els) {
 
             let ob = {};
 
-            ob.owner = await getOwnerOf(contract,i);
+            let tokenID = el.getAttribute('data-token');
+
+            ob.owner = await getOwnerOf(contract,tokenID);
             //
             // ob.tokenURI = await getTokenURI(contract,i);
             //
@@ -138,7 +139,7 @@ async function getContract(myWeb3) {
             // els[i - 1].href = 'https://opensea.io/assets/' + address + '/' + i;
             // el_grid.href = 'https://opensea.io/assets/' + address + '/' + i;
 
-            // console.log(ob);
+            console.log(ob);
     //
     //         // tokenList.push(ob);
         }
