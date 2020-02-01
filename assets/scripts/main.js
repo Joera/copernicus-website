@@ -99,59 +99,59 @@ async function getContract(myWeb3) {
 
     let contract = myWeb3.eth.contract(abi).at(address);
 
-    console.log(contract);
 
-    await contract.totalSupply.call( async function (err, data) {
 
-        if (err) {
-            console.log(err)
-        }
-
-        let supply = (data === undefined) ? 0 :  data.toNumber();
-        let tokenList = [];
-        let i;
-        let el, el_grid;
-
-        console.log(supply);
-
-        // 0x404c085967bb7811120ed38a642f67ff50ff6e0443795ab1ba2dfb788f7d2f25
-
-        let els = [].slice.call(document.querySelectorAll(".system a"));
-
-        for (i = 1; i < parseInt(supply) + 1; i++) {
-
-            let ob = {};
-
-            ob.owner = await getOwnerOf(contract,i);
-
-            ob.tokenURI = await getTokenURI(contract,i);
-
-            el_grid = document.querySelector(".grid a:nth-of-type(" + i + ")");
-
-            if(ob.owner && ob.owner !== undefined) {
-                el_grid.classList.add('has_owner');
-                els[i - 1].classList.add('has_owner');
-                els[i - 1].querySelector('span.address').innerText = ob.owner;
-            }
-
-            els[i - 1].href = 'https://opensea.io/assets/' + address + '/' + i;
-            el_grid.href = 'https://opensea.io/assets/' + address + '/' + i;
-
-            // tokenList.push(ob);
-        }
-
-        for (i = parseInt(supply) + 1; i < els.length; i++) {
-
-            els[i].addEventListener('click', async function(ev) {
-
-                let el = (ev.target.type === 'a' ) ? ev.target : ev.target.parentNode;
-                let ret = await mint(myWeb3,contract,el.getAttribute('data-token'));
-
-            }, false);
-
-        }
-
-    });
+    // await contract.totalSupply.call( async function (err, data) {
+    //
+    //     if (err) {
+    //         console.log(err)
+    //     }
+    //
+    //     let supply = (data === undefined) ? 0 :  data.toNumber();
+    //     let tokenList = [];
+    //     let i;
+    //     let el, el_grid;
+    //
+    //     console.log(supply);
+    //
+    //     // 0x404c085967bb7811120ed38a642f67ff50ff6e0443795ab1ba2dfb788f7d2f25
+    //
+    //     let els = [].slice.call(document.querySelectorAll(".system a"));
+    //
+    //     for (i = 1; i < parseInt(supply) + 1; i++) {
+    //
+    //         let ob = {};
+    //
+    //         ob.owner = await getOwnerOf(contract,i);
+    //
+    //         ob.tokenURI = await getTokenURI(contract,i);
+    //
+    //         el_grid = document.querySelector(".grid a:nth-of-type(" + i + ")");
+    //
+    //         if(ob.owner && ob.owner !== undefined) {
+    //             el_grid.classList.add('has_owner');
+    //             els[i - 1].classList.add('has_owner');
+    //             els[i - 1].querySelector('span.address').innerText = ob.owner;
+    //         }
+    //
+    //         els[i - 1].href = 'https://opensea.io/assets/' + address + '/' + i;
+    //         el_grid.href = 'https://opensea.io/assets/' + address + '/' + i;
+    //
+    //         // tokenList.push(ob);
+    //     }
+    //
+    //     for (i = parseInt(supply) + 1; i < els.length; i++) {
+    //
+    //         els[i].addEventListener('click', async function(ev) {
+    //
+    //             let el = (ev.target.type === 'a' ) ? ev.target : ev.target.parentNode;
+    //             let ret = await mint(myWeb3,contract,el.getAttribute('data-token'));
+    //
+    //         }, false);
+    //
+    //     }
+    //
+    // });
 }
 
 function showcase(i) {
