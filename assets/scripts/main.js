@@ -101,16 +101,16 @@ async function getContract(myWeb3) {
 
 
 
-    // await contract.totalSupply.call( async function (err, data) {
-    //
-    //     if (err) {
-    //         console.log(err)
-    //     }
-    //
-    //     let supply = (data === undefined) ? 0 :  data.toNumber();
-    //     let tokenList = [];
-    //     let i;
-    //     let el, el_grid;
+    await contract.totalSupply.call( async function (err, data) {
+
+        if (err) {
+            console.log(err)
+        }
+
+        let supply = (data === undefined) ? 0 :  data.toNumber();
+        let tokenList = [];
+        let i;
+        let el, el_grid;
     //
     //     console.log(supply);
     //
@@ -151,7 +151,7 @@ async function getContract(myWeb3) {
     //
     //     }
     //
-    // });
+    });
 }
 
 function showcase(i) {
