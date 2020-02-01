@@ -65,10 +65,10 @@ function mint(myWeb3,contract,i) {
 
     return new Promise (function (resolve, reject) {
 
-        console.log(myWeb3);
+        console.log(myWeb3.eth.accounts[0]);
 
         contract.methods
-            .mintUniqueTokenTo(myWeb3.accounts[0], i,'')
+            .mintUniqueTokenTo(myWeb3.eth.accounts[0], i,'')
             .estimateGas()
             .then(function (estimate) {
                 console.log("Estimated gas to execute mint: ", estimate);
@@ -129,7 +129,7 @@ async function getContract(myWeb3) {
             for (i = parseInt(supply) + 1; i < els.length; i++) {
 
                 els[i].addEventListener('click', async function() {
-                    
+
                     let ret = await mint(myWeb3,contract,i);
 
                 }, false);
