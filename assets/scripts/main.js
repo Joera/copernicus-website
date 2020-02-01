@@ -111,8 +111,8 @@ async function getContract(myWeb3) {
         if (err) {
             console.log(err)
         }
-        
-        let supply = data.toNumber() || 0;
+
+        let supply = (data === undefined) ? 0 :  data.toNumber();
         let tokenList = [];
         let i;
         let el, el_grid;
