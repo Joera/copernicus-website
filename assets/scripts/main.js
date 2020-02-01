@@ -67,10 +67,9 @@ function mint(myWeb3,contract,i) {
 
         console.log(i);
 
-        let j = 1;
-        let tokenURIs = 'https://projectcopernicus.autonomous-times.com/assets/json/ticket_' + j + '.json';
+        let tokenURIs = 'https://projectcopernicus.autonomous-times.com/assets/json/ticket_' + i + '.json';
 
-        contract.mintUniqueTokenTo(myWeb3.eth.accounts[0], j,tokenURIs,{ from : myWeb3.eth.accounts[0], gas : 5000000 }, function(error,data) {
+        contract.mintUniqueTokenTo(myWeb3.eth.accounts[0], i,tokenURIs,{ from : myWeb3.eth.accounts[0], gas : 5000000 }, function(error,data) {
 
             if(error) {
                 console.log(error);
@@ -145,13 +144,8 @@ async function getContract(myWeb3) {
 
             els[i].addEventListener('click', async function(ev) {
 
-                console.log(ev);
-
-                let el = (ev.target.type === 'a' ) ? ev.target : ev.target.parentNode
-
-                console.log(el.getAttribute('data-token'));
-
-                let ret = await mint(myWeb3,contract,i);
+                let el = (ev.target.type === 'a' ) ? ev.target : ev.target.parentNode;
+                let ret = await mint(myWeb3,contract,el.getAttribute('data-token'));
 
             }, false);
 
