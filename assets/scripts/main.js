@@ -128,7 +128,7 @@ async function getContract(myWeb3) {
                 // tokenList.push(ob);
             }
 
-            for (i = supply; i < els.length; i++) {
+            for (i = parseInt(supply) + 1; i < els.length; i++) {
 
                 console.log('1');
 
