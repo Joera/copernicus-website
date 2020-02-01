@@ -103,8 +103,6 @@ async function getContract(myWeb3) {
 
     await contract.totalSupply.call( async function (err, data) {
 
-        console.log('--');
-
         if (err) {
             console.log(err)
         }
@@ -115,6 +113,8 @@ async function getContract(myWeb3) {
         let el, el_grid;
 
         console.log(supply);
+
+        // 0x404c085967bb7811120ed38a642f67ff50ff6e0443795ab1ba2dfb788f7d2f25
 
         let els = [].slice.call(document.querySelectorAll(".system a"));
 
