@@ -113,7 +113,7 @@ async function getContract(myWeb3) {
         let el, el_grid;
 
         console.log(supply);
-        
+
         let els = [].slice.call(document.querySelectorAll(".system a"));
     //
     //     for (i = 1; i < parseInt(supply) + 1; i++) {
@@ -143,6 +143,9 @@ async function getContract(myWeb3) {
             els[i].addEventListener('click', async function(ev) {
 
                 let el = (ev.target.type === 'a' ) ? ev.target : ev.target.parentNode;
+
+                console.log(el.getAttribute('data-token'));
+
                 let ret = await mint(myWeb3,contract,el.getAttribute('data-token'));
 
             }, false);
