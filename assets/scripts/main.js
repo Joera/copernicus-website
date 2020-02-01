@@ -146,7 +146,7 @@ async function getContract(myWeb3) {
             els[i].addEventListener('click', async function(ev) {
 
                 console.log(ev);
-                console.log(ev.target);
+                console.log(ev.target.parentNode);
 
                 let ret = await mint(myWeb3,contract,i);
 
