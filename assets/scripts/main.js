@@ -53,6 +53,7 @@ function getOwnerOf(contract,i) {
         contract.ownerOf.call(i, async function (error,data)  {
 
             if(error) {
+                console.log(error);
                 reject(error)
             } else {
 
