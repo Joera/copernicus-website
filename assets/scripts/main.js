@@ -61,6 +61,21 @@ function getOwnerOf(contract,i) {
     });
 }
 
+function mint(myWeb3,contract,i) {
+
+    return new Promise (function (resolve, reject) {
+
+        console.log(myWeb3.accounts[0]);
+
+        contract.methods
+            .mintUniqueTokenTo(myWeb3.accounts[0], i,'')
+            .estimateGas()
+            .then(function (estimate) {
+                console.log("Estimated gas to execute mint: ", estimate);
+            });
+    });
+}
+
 async function getContract(myWeb3) {
 
     let address = '0xc48cE47D564d7B09b40f0B1d15908FA8699B3896';
@@ -71,7 +86,6 @@ async function getContract(myWeb3) {
     let contract = myWeb3.eth.contract(abi).at(address);
 
     console.log(contract);
-
 
     await contract.totalSupply.call( async function (err, data) {
 
@@ -109,6 +123,16 @@ async function getContract(myWeb3) {
                 el_grid.href = 'https://opensea.io/assets/' + address + '/' + i;
 
                 // tokenList.push(ob);
+            }
+
+            for (i = supply; i < els.length; i++) {
+
+                els[i].addEventListener('click', async function() {
+
+                    let ret = await mint(myWeb3,contract,i);
+
+                }, false);
+
             }
 
         } else {
