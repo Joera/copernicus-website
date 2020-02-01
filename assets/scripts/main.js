@@ -67,12 +67,22 @@ function mint(myWeb3,contract,i) {
 
         console.log(myWeb3.eth.accounts[0]);
 
-        contract.mintUniqueTokenTo(myWeb3.eth.accounts[0], i,'')
-            .estimateGas()
-            .then(function (estimate) {
-                console.log("Estimated gas to execute mint: ", estimate);
-                resolve(estimate);
-            });
+        contract.mintUniqueTokenTo(myWeb3.eth.accounts[0], i,'',function(error,data) {
+
+            if(error) {
+                console.log(error);
+                reject(error)
+            } else {
+                console.log(data);
+                resolve(data);
+            }
+
+        });
+            // .estimateGas()
+            // .then(function (estimate) {
+            //     console.log("Estimated gas to execute mint: ", estimate);
+            //     resolve(estimate);
+            // });
     });
 }
 
