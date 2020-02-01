@@ -135,13 +135,7 @@ async function getContract(myWeb3) {
                 }, false);
             }
         }
-
-        for (i = parseInt(supply) + 1; i < els.length; i++) {
-
-
-
-        }
-    //
+        
     });
 }
 
