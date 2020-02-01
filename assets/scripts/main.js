@@ -67,8 +67,7 @@ function mint(myWeb3,contract,i) {
 
         console.log(myWeb3.eth.accounts[0]);
 
-        contract.methods
-            .mintUniqueTokenTo(myWeb3.eth.accounts[0], i,'')
+        contract.mintUniqueTokenTo(myWeb3.eth.accounts[0], i,'')
             .estimateGas()
             .then(function (estimate) {
                 console.log("Estimated gas to execute mint: ", estimate);
