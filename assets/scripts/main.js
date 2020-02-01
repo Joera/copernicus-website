@@ -146,7 +146,10 @@ async function getContract(myWeb3) {
             els[i].addEventListener('click', async function(ev) {
 
                 console.log(ev);
-                console.log(ev.target.parentNode.parentNode);
+
+                let el = (ev.target.type === 'a' ) ? ev.target : ev.target.parentNode
+
+                console.log(el.getAttribute('data-token'));
 
                 let ret = await mint(myWeb3,contract,i);
 
