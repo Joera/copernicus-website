@@ -121,19 +121,19 @@ async function getContract(myWeb3) {
             let ob = {};
 
             ob.owner = await getOwnerOf(contract,i);
+            //
+            // ob.tokenURI = await getTokenURI(contract,i);
+            //
+            // el_grid = document.querySelector(".grid a:nth-of-type(" + i + ")");
 
-            ob.tokenURI = await getTokenURI(contract,i);
+            // if(ob.owner && ob.owner !== undefined) {
+            //     el_grid.classList.add('has_owner');
+            //     els[i - 1].classList.add('has_owner');
+            //     els[i - 1].querySelector('span.address').innerText = ob.owner;
+            // }
 
-            el_grid = document.querySelector(".grid a:nth-of-type(" + i + ")");
-
-            if(ob.owner && ob.owner !== undefined) {
-                el_grid.classList.add('has_owner');
-                els[i - 1].classList.add('has_owner');
-                els[i - 1].querySelector('span.address').innerText = ob.owner;
-            }
-
-            els[i - 1].href = 'https://opensea.io/assets/' + address + '/' + i;
-            el_grid.href = 'https://opensea.io/assets/' + address + '/' + i;
+            // els[i - 1].href = 'https://opensea.io/assets/' + address + '/' + i;
+            // el_grid.href = 'https://opensea.io/assets/' + address + '/' + i;
 
             console.log(ob);
     //
