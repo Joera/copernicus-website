@@ -102,7 +102,7 @@ async function getContract(myWeb3) {
 
     let contract = myWeb3.eth.contract(abi).at(address);
 
-    console.log('1');
+    console.log(contract);
 
     await contract.totalSupply.call( async function (err, data) {
 
