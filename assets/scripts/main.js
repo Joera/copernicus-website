@@ -80,13 +80,7 @@ function mint(myWeb3,contract,i) {
             } else {
                 resolve(data);
             }
-
         });
-            // .estimateGas()
-            // .then(function (estimate) {
-            //     console.log("Estimated gas to execute mint: ", estimate);
-            //     resolve(estimate);
-            // });
     });
 }
 
@@ -116,47 +110,35 @@ async function getContract(myWeb3) {
 
         console.log(supply);
 
-        let els = [].slice.call(document.querySelectorAll(".system a"));
+        let systemEls = [].slice.call(document.querySelectorAll(".system a"));
+        let gridEls = [].slice.call(document.querySelectorAll(".grid a"));
 
-        for (el of els) {
+        for (el of systemEls) {
 
             let ob = {};
-
             let tokenID = el.getAttribute('data-token');
 
             ob.owner = await getOwnerOf(contract,tokenID);
-            //
-            // ob.tokenURI = await getTokenURI(contract,i);
-            //
-            // el_grid = document.querySelector(".grid a:nth-of-type(" + i + ")");
+            ob.tokenURI = await getTokenURI(contract,tokenID);
 
-            // if(ob.owner && ob.owner !== undefined) {
+            if(ob.owner !== '0x') {
             //     el_grid.classList.add('has_owner');
-            //     els[i - 1].classList.add('has_owner');
-            //     els[i - 1].querySelector('span.address').innerText = ob.owner;
-            // }
+                el.classList.add('has_owner');
+                el.querySelector('span.address').innerText = ob.owner;
+            } else {
 
-            // els[i - 1].href = 'https://opensea.io/assets/' + address + '/' + i;
-            // el_grid.href = 'https://opensea.io/assets/' + address + '/' + i;
+                el.addEventListener('click', async function(ev) {
 
-            console.log(ob);
-    //
-    //         // tokenList.push(ob);
+                    let el = (ev.target.nodeName === 'A' ) ? ev.target : ev.target.parentNode;
+                    let ret = await mint(myWeb3,contract,el.getAttribute('data-token'));
+
+                }, false);
+            }
         }
 
         for (i = parseInt(supply) + 1; i < els.length; i++) {
 
-            els[i].addEventListener('click', async function(ev) {
 
-                console.log(ev.target.nodeName);
-
-                let el = (ev.target.nodeName === 'A' ) ? ev.target : ev.target.parentNode;
-
-                console.log(el.getAttribute('data-token'));
-
-                let ret = await mint(myWeb3,contract,el.getAttribute('data-token'));
-
-            }, false);
 
         }
     //
