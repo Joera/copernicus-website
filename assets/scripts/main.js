@@ -119,7 +119,7 @@ async function getContract(myWeb3) {
             let tokenID = el.getAttribute('data-token');
 
             ob.owner = await getOwnerOf(contract,tokenID);
-            ob.tokenURI = await getTokenURI(contract,tokenID);
+         //   ob.tokenURI = await getTokenURI(contract,tokenID);
 
             if(ob.owner !== '0x') {
             //     el_grid.classList.add('has_owner');
