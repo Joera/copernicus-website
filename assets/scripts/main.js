@@ -67,7 +67,7 @@ function mint(myWeb3,contract,i) {
 
     return new Promise (function (resolve, reject) {
 
-        console.log(myWeb3.eth.accounts[0]);
+        console.log(i);
 
 
         contract.mintUniqueTokenTo(myWeb3.eth.accounts[0], parsInt(i),tokenURIs,function(error,data) {
