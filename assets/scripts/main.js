@@ -63,11 +63,14 @@ function getOwnerOf(contract,i) {
 
 function mint(myWeb3,contract,i) {
 
+    let tokenURIs = 'https://projectcopernicus.autonomous-times.com/';
+
     return new Promise (function (resolve, reject) {
 
         console.log(myWeb3.eth.accounts[0]);
 
-        contract.mintUniqueTokenTo(myWeb3.eth.accounts[0], i,'',function(error,data) {
+
+        contract.mintUniqueTokenTo(myWeb3.eth.accounts[0], i,tokenURIs,function(error,data) {
 
             if(error) {
                 console.log(error);
