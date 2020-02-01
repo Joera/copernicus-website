@@ -70,6 +70,8 @@ async function getContract(myWeb3) {
 
     let contract = myWeb3.eth.contract(abi).at(address);
 
+    console.log(contract);
+
 
     await contract.totalSupply.call( async function (err, data) {
 
@@ -84,8 +86,6 @@ async function getContract(myWeb3) {
             let el, el_grid;
 
             let els = [].slice.call(document.querySelectorAll(".system a"));
-
-            console.log(els);
 
             for (i = 1; i < parseInt(supply) + 1; i++) {
 
