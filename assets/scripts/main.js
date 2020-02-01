@@ -106,6 +106,8 @@ async function getContract(myWeb3) {
 
     await contract.totalSupply.call( async function (err, data) {
 
+        console.log('--');
+
         if (err) {
             console.log(err)
         }
