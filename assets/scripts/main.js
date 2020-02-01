@@ -87,9 +87,11 @@ async function getContract(myWeb3) {
 
             let els = [].slice.call(document.querySelectorAll(".system a"));
 
+            console.log(supply);
+
             for (i = 1; i < parseInt(supply) + 1; i++) {
 
-                 let ob = {};
+                let ob = {};
 
                 ob.owner = await getOwnerOf(contract,i);
 
