@@ -30,6 +30,13 @@ h1 {
     text-align: center;
 }
 
+h1 span {
+
+    display: inline-block;
+    font-size: 8rem;
+    margin-left: 1rem;
+}
+
 .tagline {
 
     font-family: "Fell Type A", "Fell Type B";
