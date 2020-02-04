@@ -201,8 +201,8 @@ div.system {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 48vh;
-    width: 48vh;
+    height: 32vh;
+    width: 32vh;
     border-radius: 50%;
     background: linear-gradient(90deg, rgba(219,232,0,1) 0%, rgba(255,162,7,1) 100%);
     transform: rotateX(-90deg);
